@@ -3,7 +3,10 @@
 }
 
 .inner.header-inner {
-  padding: 15px 200px;
+  height: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 15px;
 }
 
 .btn {
@@ -38,12 +41,12 @@ h1,h2 {
   white-space: nowrap;
 }
 
-section {
+.title-under {
   background-color: #74cfae;
   height: 345px;
 }
 
-img {
+.title-under img {
   margin-left: 200px;
   padding-top: 50px;
 }
@@ -64,8 +67,9 @@ h4 {
   font-size: 20px;
 }
 
-article {
+.main {
   background-color: #f2f2f2;
+  height: 1140px;
 }
 
 h5 {
@@ -74,28 +78,89 @@ h5 {
   text-align: center;
 }
 
-.content li {
-  list-style: none;
-  margin-left: 60px;
-}
-
-.content img {
+.main-inner li {
+  float: left;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
   margin-left: 100px;
+  padding-left: 35px;
 }
 
-.content li:nth-child(3n+1) {
+.main-inner li:nth-child(3n+1) {
   clear: both;
 }
 
-h6 {
-  padding-top: 90px;
-  padding-bottom: 70px;
-}
-
-.button {
+.main-inner .button {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
-  float: right;
+  margin-top: 90px;
   padding: 14px 20px;
+}
+
+.main-inner .text {
+  margin-top: 90px;
+  margin-right: 90px;
+  width: 50%;
+}
+
+.main-under {
+  background-color: #333;
+  height: 400px;
+}
+
+.main-under h6 {
+  color: #fff;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.main-under li {
+  float: left;
+  margin-left: 180px;
+  padding-top: 80px;
+  padding-right: 20px;
+}
+
+.main-content p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #f2f2f2;
+  height: 500px;
+  text-align: center;
+}
+
+nav a {
+  color: #74cfae;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 70px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 185px;
+}
+
+.footer-inner {
+  background-color: #74cfae;
+  margin-top: 200px;
+}
+
+h6 {
+  color: #fff;
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-right: 100px;
+  text-align: right;
 }
