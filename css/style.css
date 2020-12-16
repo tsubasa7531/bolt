@@ -132,23 +132,21 @@ h5 {
 
 footer {
   background-color: #f2f2f2;
-  height: 500px;
+  height: 530px;
   text-align: center;
 }
 
 nav a {
   color: #74cfae;
   margin-top: 200px;
-  margin-left: 100px;
-  margin-right: 70px;
-  transition: all 0.3s ease;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transition: all 0.3s;
+  width: 185px;
 }
 
 nav a:hover {
   background-color: #fff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  width: 185px;
 }
 
 .footer-inner {
