@@ -16,6 +16,7 @@
   float: right;
   padding: 14px 12px;
   text-decoration: none;
+  text-align: center;
 }
 
 .title {
@@ -44,6 +45,9 @@ h1,h2 {
 
 .title-under {
   background-color: #74cfae;
+}
+
+.inner.title-under {
   height: 345px;
 }
 
@@ -70,6 +74,9 @@ h4 {
 
 .main {
   background-color: #f2f2f2;
+}
+
+.inner.main-inner {
   height: 1140px;
 }
 
@@ -81,15 +88,17 @@ h5 {
 
 .main-inner li {
   float: left;
-  text-align: center;
   margin-top: 40px;
   margin-bottom: 80px;
-  margin-left: 100px;
-  padding-left: 35px;
 }
 
 .main-inner li:nth-child(3n+1) {
   clear: both;
+}
+
+.main-inner img {
+  margin-left: 100px;
+  padding-left: 40px;
 }
 
 .main-inner .button {
@@ -101,13 +110,18 @@ h5 {
 }
 
 .main-inner .text {
+  font-size: 20px;
   margin-top: 90px;
   margin-right: 90px;
-  width: 50%;
+  padding-left: 250px;
+  text-align: center;
 }
 
 .main-under {
   background-color: #333;
+}
+
+.inner.main-under {
   height: 400px;
 }
 
@@ -117,11 +131,10 @@ h5 {
   text-align: center;
 }
 
-.main-under li {
-  float: left;
-  margin-left: 180px;
-  padding-top: 80px;
-  padding-right: 20px;
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .main-content p {
@@ -131,9 +144,9 @@ h5 {
   text-align: center;
 }
 
-footer {
+nav {
   background-color: #f2f2f2;
-  height: 530px;
+  height: 450px;
   text-align: center;
 }
 
@@ -151,12 +164,11 @@ nav a:hover {
   background-color: #fff;
 }
 
-.footer-inner {
+.inner.footer-inner {
   background-color: #74cfae;
-  margin-top: 200px;
 }
 
-h6 {
+.inner.footer-inner p {
   color: #fff;
   font-size: 15px;
   padding-top: 20px;
@@ -164,3 +176,4 @@ h6 {
   padding-right: 100px;
   text-align: right;
 }
+
