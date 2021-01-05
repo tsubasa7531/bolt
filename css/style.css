@@ -115,13 +115,13 @@ header {
   margin-left: 0;
 }
 
+.main-central li:nth-child(7) {
+  margin-top: 90px;
+}
+
 .main-central li:nth-child(8) {
   margin-top: 90px;
   margin-left: 90px;
-}
-
-.main-central li:nth-child(7) {
-  margin-top: 90px;
 }
 
 .main-central img {
