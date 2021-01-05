@@ -1,8 +1,4 @@
-.header {
-  background-color: #fff;
-}
-
-.inner.header-inner {
+header {
   margin: 0 auto;
   width: 1100px;
   padding-top: 15px;
@@ -17,6 +13,11 @@
   padding: 14px 12px;
   text-decoration: none;
   text-align: center;
+}
+
+.btn:hover {
+  background-color: #fff;
+  transition: all 0.3s;
 }
 
 .title {
@@ -42,39 +43,41 @@
   font-size: 30px;
 }
 
-h1,h2 {
+.inner.title-inner h1,h2 {
   text-align: center;
 }
 
 .WHATWECANDO {
   background-color: #74cfae;
-  text-align: center;
-}
-
-.WHATWECANDO img {
-  float: left;
-  margin-top: 50px;
-  padding-right: 120px;
 }
 
 .inner.title-under {
   margin: 0 auto;
   width: 1100px;
+  padding-left: 200px;
 }
 
-h3,h4 {
+.WHATWECANDO img {
+  float: left;
+  margin-top: 50px;
+  margin-right: 120px;
+}
+
+.inner.title-under h3,h4 {
   color: #fff;
+  text-align: center;
 }
 
-h3 {
+.inner.title-under h3 {
   font-size: 24px;
   padding-bottom: 35px;
-  padding-top: 100px;
+  padding-top: 70px;
 }
   
 
-h4 {
+.inner.title-under h4 {
   font-size: 20px;
+  line-height: normal;
 }
 
 .clearfix::after {
@@ -85,15 +88,16 @@ h4 {
 
 .OURLATESTWORK {
   background-color: #f2f2f2;
+  color: #333;
 }
 
 .inner.main-inner {
   margin: 0 auto;
   width: 1100px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
-h5 {
+.inner.main-inner h5 {
   font-size: 24px;
   padding-top: 60px;
   text-align: center;
@@ -112,26 +116,40 @@ h5 {
 }
 
 .main-central li:nth-child(8) {
+  margin-top: 90px;
   margin-left: 90px;
+}
+
+.main-central li:nth-child(7) {
+  margin-top: 90px;
+}
+
+.main-central img {
+  opacity: 0.7;
+}
+
+.main-central img:hover {
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .main-central .button {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
-  margin-top: 50px;
   padding: 14px 20px;
 }
 
 .main-central .text {
+  color: #333;
   font-size: 20px;
-  margin-top: 50px;
+  line-height: normal;
   padding-left: 90px;
   text-align: center;
 }
 
 .OURSKILLS {
-  background-color: #333;
+  background-color: #4e4e4e;
   padding-top: 70px;
 }
 
@@ -142,6 +160,7 @@ h5 {
 
 .OURSKILLS h6 {
   color: #fff;
+  font-size: 24px;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -203,7 +222,7 @@ footer {
 
 .inner.footer-inner p {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   padding-top: 20px;
   padding-bottom: 25px;
   text-align: right;
