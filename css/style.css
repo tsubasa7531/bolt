@@ -15,11 +15,11 @@ header {
   text-align: center;
 }
 
-.btn:hover {
-  background-color: #fff;
-  transition: all 0.3s;
-}
 
+.btn:hover {
+  color: #333;
+  transition: 0.3s;
+}
 .title {
   background-color: #f2f2f2;
 }
@@ -38,12 +38,12 @@ header {
   padding-bottom: 20px;
 }
 
-.inner.title-inner h2 {
+.inner.title-inner p {
   color: #c0c0c0;
   font-size: 30px;
 }
 
-.inner.title-inner h1,h2 {
+.inner.title-inner h1,p {
   text-align: center;
 }
 
@@ -63,19 +63,19 @@ header {
   margin-right: 120px;
 }
 
-.inner.title-under h3,h4 {
+.inner.title-under h2,p {
   color: #fff;
   text-align: center;
 }
 
-.inner.title-under h3 {
+.inner.title-under h2 {
   font-size: 24px;
   padding-bottom: 35px;
   padding-top: 70px;
 }
   
 
-.inner.title-under h4 {
+.inner.title-under p {
   font-size: 20px;
   line-height: normal;
 }
@@ -94,10 +94,10 @@ header {
 .inner.main-inner {
   margin: 0 auto;
   width: 1100px;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 }
 
-.inner.main-inner h5 {
+.inner.main-inner h3 {
   font-size: 24px;
   padding-top: 60px;
   text-align: center;
@@ -115,15 +115,6 @@ header {
   margin-left: 0;
 }
 
-.main-central li:nth-child(7) {
-  margin-top: 90px;
-}
-
-.main-central li:nth-child(8) {
-  margin-top: 90px;
-  margin-left: 90px;
-}
-
 .main-central img {
   opacity: 0.7;
 }
@@ -133,19 +124,33 @@ header {
   transition: all 0.3s;
 }
 
-.main-central .button {
+.inner.main-central {
+  margin-top: 50px;
+}
+
+.inner.main-inner a {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
+  float: left;
+  margin-left: 90px;
   padding: 14px 20px;
+  text-decoration: none;
 }
 
-.main-central .text {
+.inner.main-inner a:hover {
+  color: #333;
+  transition: 0.3s;
+}
+
+.inner.main-inner .text {
   color: #333;
   font-size: 20px;
+  float: left;
   line-height: normal;
-  padding-left: 90px;
+  margin-left: 80px;
   text-align: center;
+  width: 60%;
 }
 
 .OURSKILLS {
@@ -158,7 +163,7 @@ header {
   width: 1100px;
 }
 
-.OURSKILLS h6 {
+.OURSKILLS h4 {
   color: #fff;
   font-size: 24px;
   text-align: center;
