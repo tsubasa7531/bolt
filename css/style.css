@@ -1,4 +1,10 @@
 header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+.inner.header-inner {
   margin: 0 auto;
   width: 1100px;
   padding-top: 15px;
@@ -35,12 +41,12 @@ header {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  padding-bottom: 20px;
 }
 
 .inner.title-inner p {
   color: #c0c0c0;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .inner.title-inner h1,p {
@@ -54,13 +60,13 @@ header {
 .inner.title-under {
   margin: 0 auto;
   width: 1100px;
+  padding-top: 50px;
   padding-left: 200px;
 }
 
 .WHATWECANDO img {
   float: left;
-  margin-top: 50px;
-  margin-right: 120px;
+  padding-right: 120px;
 }
 
 .inner.title-under h2,p {
@@ -70,14 +76,14 @@ header {
 
 .inner.title-under h2 {
   font-size: 24px;
-  padding-bottom: 35px;
-  padding-top: 70px;
+  margin-top: 20px;
 }
   
 
 .inner.title-under p {
   font-size: 20px;
   line-height: normal;
+  margin-top: 35px;
 }
 
 .clearfix::after {
@@ -94,12 +100,12 @@ header {
 .inner.main-inner {
   margin: 0 auto;
   width: 1100px;
+  padding-top: 60px;
   padding-bottom: 70px;
 }
 
-.inner.main-inner h3 {
+.inner.main-inner h2 {
   font-size: 24px;
-  padding-top: 60px;
   text-align: center;
 }
 
@@ -155,15 +161,16 @@ header {
 
 .OURSKILLS {
   background-color: #4e4e4e;
-  padding-top: 70px;
 }
 
 .inner.main-under {
   margin: 0 auto;
   width: 1100px;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 
-.OURSKILLS h4 {
+.OURSKILLS h2 {
   color: #fff;
   font-size: 24px;
   text-align: center;
@@ -173,7 +180,6 @@ header {
 .main-content li {
   float: left;
   margin-left: 180px;
-  padding-bottom: 100px;
 }
 
 .main-content li:first-child {
@@ -190,12 +196,12 @@ header {
 .icon {
   background-color: #f2f2f2;
   text-align: center;
-  padding-bottom: 200px;
 }
 
 .inner-icon {
   margin: 0 auto;
   width: 1100px;
+  padding-bottom: 200px;
 }
 
 .inner-icon li {
@@ -223,12 +229,12 @@ footer {
 .inner.inner.footer-inner {
   margin: 0 auto;
   width: 1100px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .inner.footer-inner p {
   color: #fff;
   font-size: 16px;
-  padding-top: 20px;
-  padding-bottom: 25px;
   text-align: right;
 }
