@@ -1,3 +1,14 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1100px;
+}
+
 header {
   background-color: #fff;
   position: fixed;
@@ -6,9 +17,7 @@ header {
 }
 
 .inner.header-inner {
-  margin: 0 auto;
   padding: 15px 0px 15px;
-  width: 1100px;
 }
 
 .btn {
@@ -31,9 +40,7 @@ header {
 }
 
 .inner.title-inner {
-  margin: 0 auto;
   padding: 300px 0 250px;
-  width: 1100px;
 }
 
 .inner.title-inner h1 {
@@ -57,9 +64,7 @@ header {
 }
 
 .inner.WHATWECANDO-inner {
-  margin: 0 auto;
   padding: 50px 0px 0px 50px;
-  width: 1100px;
 }
 
 .WHATWECANDO img {
@@ -89,11 +94,6 @@ header {
   width: 70%;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
-}
 
 .OURLATESTWORK {
   background-color: #f2f2f2;
@@ -101,9 +101,7 @@ header {
 }
 
 .inner.OURLATESTWORK-inner {
-  margin: 0 auto;
   padding: 60px 0 70px;
-  width: 1100px;
 }
 
 .inner.OURLATESTWORK-inner h2 {
@@ -165,8 +163,6 @@ header {
 }
 
 .inner.OURSKILLS-inner {
-  margin: 0 auto;
-  width: 1100px;
   padding: 70px 0px 100px;
 }
 
@@ -198,9 +194,7 @@ header {
 }
 
 .inner.SNSicon-inner {
-  margin: 0 auto;
   padding: 200px 0;
-  width: 1100px;
 }
 
 .inner.SNSicon-inner li {
@@ -224,9 +218,7 @@ footer {
 }
 
 .inner.inner.footer-inner {
-  margin: 0 auto;
   padding: 20px 0 25px;
-  width: 1100px;
 }
 
 .inner.footer-inner p {
