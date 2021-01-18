@@ -9,6 +9,10 @@
   width: 1100px;
 }
 
+body {
+ font-family: 'Raleway','Lato',sans-serif;
+}
+
 header {
   background-color: #fff;
   position: fixed;
@@ -40,7 +44,7 @@ header {
 }
 
 .inner.title-inner {
-  padding: 300px 0 250px;
+  padding: 250px 0 250px;
 }
 
 .inner.title-inner h1 {
@@ -57,6 +61,10 @@ header {
 
 .inner.title-inner h1,p {
   text-align: center;
+}
+
+.wrapper {
+  padding-top: 70px;
 }
 
 .WHATWECANDO {
@@ -85,6 +93,7 @@ header {
 
 .inner.WHATWECANDO-inner p {
   font-size: 20px;
+  font-family: sans-serif;
   line-height: normal;
   margin-top: 35px;
 }
@@ -109,15 +118,22 @@ header {
   text-align: center;
 }
 
+.OURLATESTWORK-central {
+  margin-top: 40px;
+}
+
 .OURLATESTWORK-central li {
   float: left;
-  margin: 40px 0px 0px 100px;
-  padding-bottom: 40px;
+  margin-left: 100px;
 }
 
 .OURLATESTWORK-central li:nth-child(3n+1) {
   clear: both;
   margin-left: 0;
+}
+
+.OURLATESTWORK-central li:nth-child(n+4) {
+  margin-top: 80px;
 }
 
 .OURLATESTWORK-central img {
@@ -150,6 +166,7 @@ header {
 
 .inner.OURLATESTWORK-inner .text {
   color: #333;
+  font-family: sans-serif;
   font-size: 20px;
   float: left;
   line-height: normal;
@@ -172,9 +189,13 @@ header {
   text-align: center;
 }
 
+.OURSKILLS-content {
+  margin-top: 50px;
+}
+
 .OURSKILLS-content li {
   float: left;
-  margin: 50px 0px 0px 180px;
+  margin-left: 180px;
 }
 
 .OURSKILLS-content li:first-child {
@@ -183,6 +204,7 @@ header {
 
 .OURSKILLS-content p {
   color: #fff;
+  font-family: sans-serif;
   font-size: 16px;
   margin-top: 20px;
   text-align: center;
@@ -223,6 +245,7 @@ footer {
 
 .inner.footer-inner p {
   color: #fff;
+  font-family: sans-serif;
   font-size: 16px;
   text-align: right;
 }
