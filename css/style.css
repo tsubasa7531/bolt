@@ -13,6 +13,10 @@ body {
  font-family: 'Lato';
 }
 
+.is-raleway {
+  font-family: 'Raleway';
+}
+
 header {
   background-color: #fff;
   position: fixed;
@@ -64,7 +68,7 @@ header {
 }
 
 .wrapper {
-  padding-top: 70px;
+  padding-top: 78px;
 }
 
 .WHATWECANDO {
@@ -87,7 +91,6 @@ header {
 
 .inner.WHATWECANDO-inner h2 {
   font-size: 24px;
-  font-family: 'Raleway';
   margin-top: 20px;
 }
   
@@ -116,7 +119,6 @@ header {
 
 .inner.OURLATESTWORK-inner h2 {
   font-size: 24px;
-  font-family: 'Raleway';
   text-align: center;
 }
 
@@ -127,6 +129,10 @@ header {
 .OURLATESTWORK-central li {
   float: left;
   margin-left: 100px;
+}
+
+.OURLATESTWORK-central a {
+  display: inline-block;
 }
 
 .OURLATESTWORK-central li:nth-child(3n+1) {
@@ -147,8 +153,8 @@ header {
   opacity: 1;
 }
 
-.inner.OURLATESTWORK-central {
-  margin-top: 50px;
+.OURLATESTWORK-text {
+  margin-top: 90px;
 }
 
 .button {
@@ -183,12 +189,12 @@ header {
 
 .inner.OURSKILLS-inner {
   padding: 70px 0px 100px;
+  text-align: center;
 }
 
 .OURSKILLS h2 {
   color: #fff;
   font-size: 24px;
-  text-align: center;
 }
 
 .OURSKILLS-content {
@@ -196,12 +202,12 @@ header {
 }
 
 .OURSKILLS-content li {
-  float: left;
+  display: inline-block;
   margin-left: 180px;
 }
 
 .OURSKILLS-content li:first-child {
-  margin-left: 30px;
+  margin-left: 0;
 }
 
 .OURSKILLS-content p {
@@ -221,7 +227,7 @@ header {
 }
 
 .inner.SNSicon-inner li {
-  display: inline;
+  display: inline-block;
 }
 
 .inner.SNSicon-inner a {
