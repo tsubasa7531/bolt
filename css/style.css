@@ -255,3 +255,49 @@ footer {
   font-size: 16px;
   text-align: right;
 }
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  .inner {
+    width: 97%;
+  }
+
+  .inner.WHATWECANDO-inner {
+    padding: 50px 0px 25px;
+  }
+
+  .WHATWECANDO img {
+    
+  }
+
+  .inner.WHATWECANDO-inner p {
+  
+  }
+
+  .text-content,.inner.OURLATESTWORK-inner {
+    width: auto;
+  }
+
+  .OURLATESTWORK-central li,.WHATWECANDO img,.inner.OURLATESTWORK-inner .text {
+    float: none;
+    text-align: center;
+  }
+
+  .OURLATESTWORK-central li {
+    margin: 0 auto;
+  }
+
+  .OURLATESTWORK-central li:nth-child(n+5) {
+    margin-top: 0px;
+  }
+
+ 
+
+@media screen and (min-width: 767px) {
+
+  }
+
+}
