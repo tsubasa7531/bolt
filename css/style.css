@@ -257,7 +257,9 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-
+  .WHATWECANDO img {
+    float: left;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -267,26 +269,23 @@ footer {
 
   .inner.WHATWECANDO-inner {
     padding: 50px 0px 25px;
+    text-align: center;
   }
 
   .WHATWECANDO img {
-    
+    padding: 0;
   }
 
-  .inner.WHATWECANDO-inner p {
-  
-  }
-
-  .text-content,.inner.OURLATESTWORK-inner {
+  .text-content  {
     width: auto;
   }
 
-  .OURLATESTWORK-central li,.WHATWECANDO img,.inner.OURLATESTWORK-inner .text {
-    float: none;
+  .inner.OURLATESTWORK-inner {
     text-align: center;
   }
 
   .OURLATESTWORK-central li {
+    float: none;
     margin: 0 auto;
   }
 
@@ -296,8 +295,10 @@ footer {
 
  
 
-@media screen and (min-width: 767px) {
-
+@media screen and (max-width: 767px) {
+  .inner {
+    width: 97%;
   }
+}
 
 }
