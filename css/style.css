@@ -80,7 +80,7 @@ header {
 }
 
 .WHATWECANDO img {
-  float: left;
+  float: none;
   padding-right: 120px;
 }
 
@@ -103,7 +103,7 @@ header {
 }
 
 .text-content {
-  float: left;
+  float: none;
   width: 70%;
 }
 
@@ -127,7 +127,7 @@ header {
 }
 
 .OURLATESTWORK-central li {
-  float: left;
+  float: none;
   margin-left: 100px;
 }
 
@@ -161,7 +161,7 @@ header {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
-  float: left;
+  float: none;
   margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
@@ -175,7 +175,7 @@ header {
 .inner.OURLATESTWORK-inner .text {
   color: #333;
   font-size: 20px;
-  float: left;
+  float: none;
   font-family: none;
   line-height: normal;
   margin-left: 80px;
@@ -199,11 +199,6 @@ header {
 
 .OURSKILLS-content {
   margin-top: 50px;
-}
-
-.OURSKILLS-content li {
-  display: inline-block;
-  margin-left: 180px;
 }
 
 .OURSKILLS-content li:first-child {
@@ -257,8 +252,13 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-  .WHATWECANDO img {
+  .WHATWECANDO img,.text-content,.OURLATESTWORK-central li,.inner.OURLATESTWORK-inner .text,.button {
     float: left;
+  }
+
+  .OURSKILLS-content li {
+    display: inline-block;
+    margin-left: 180px;
   }
 }
 
@@ -280,12 +280,11 @@ footer {
     width: auto;
   }
 
-  .inner.OURLATESTWORK-inner {
+  .OURLATESTWORK-inner {
     text-align: center;
   }
 
   .OURLATESTWORK-central li {
-    float: none;
     margin: 0 auto;
   }
 
@@ -293,12 +292,29 @@ footer {
     margin-top: 0px;
   }
 
+  .OURLATESTWORK-text {
+    margin-top: 80px;
+  }
+
+  .inner.OURLATESTWORK-inner .text {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .OURSKILLS-content li {
+    margin-top: 88px;
+  }
+}
  
 
 @media screen and (max-width: 767px) {
   .inner {
     width: 97%;
   }
-}
-
 }
