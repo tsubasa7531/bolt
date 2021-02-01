@@ -412,9 +412,12 @@ footer {
     padding: 50px 0;
   }
 
+  .inner.SNSicon-inner a {
+    width: 100%;  
+  }
+
   .inner.SNSicon-inner a:hover {
     background-color: #fff;
-    width: 100%;
   }
 
   .inner.SNSicon-inner li {
