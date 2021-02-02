@@ -39,7 +39,6 @@ header {
   transition: 0.3s;
 }
 
-
 .btn:hover {
   color: #333;
 }
@@ -91,7 +90,6 @@ header {
 
 .inner.WHATWECANDO-inner h2 {
   font-size: 24px;
-  margin-top: 20px;
 }
   
 
@@ -104,6 +102,7 @@ header {
 
 .text-content {
   float: none;
+  margin-top: 20px;
   width: 70%;
 }
 
@@ -138,10 +137,6 @@ header {
 .OURLATESTWORK-central li:nth-child(3n+1) {
   clear: both;
   margin-left: 0;
-}
-
-.OURLATESTWORK-central li:nth-child(n+4) {
-  margin-top: 80px;
 }
 
 .OURLATESTWORK-central img {
@@ -260,6 +255,10 @@ footer {
     display: inline-block;
     margin-left: 180px;
   }
+
+  .OURLATESTWORK-central li:nth-child(n+4) {
+    margin-top: 80px;
+  }  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -288,8 +287,8 @@ footer {
     margin: 0 auto;
   }
 
-  .OURLATESTWORK-central li:nth-child(n+5) {
-    margin-top: 0px;
+  .OURLATESTWORK-central li:nth-child(4) {
+    margin-top: 80px;
   }
 
   .OURLATESTWORK-text {
@@ -309,6 +308,10 @@ footer {
 
   .OURSKILLS-content li {
     margin-top: 88px;
+  }
+
+  .OURSKILLS-content li:first-child {
+    margin-top: 0;
   }
 
   .icon {
@@ -385,8 +388,8 @@ footer {
     margin: 0 auto;
   }
 
-  .OURLATESTWORK-central li:nth-child(n+5) {
-    margin-top: 0px;
+  .OURLATESTWORK-central li:nth-child(4) {
+    margin-top: 80px;
   }
 
   .OURLATESTWORK-text {
@@ -406,6 +409,10 @@ footer {
 
   .OURSKILLS-content li {
     margin-top: 88px;
+  }
+
+  .OURSKILLS-content li:first-child {
+    margin-top: 0;
   }
 
   .inner.SNSicon-inner {
