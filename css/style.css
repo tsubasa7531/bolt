@@ -80,7 +80,6 @@ header {
 
 .WHATWECANDO img {
   float: none;
-  padding-right: 120px;
 }
 
 .inner.WHATWECANDO-inner h2,p {
@@ -90,6 +89,7 @@ header {
 
 .inner.WHATWECANDO-inner h2 {
   font-size: 24px;
+  margin-top: 20px;
 }
   
 
@@ -102,7 +102,7 @@ header {
 
 .text-content {
   float: none;
-  margin-top: 20px;
+  margin-left: 120px;
   width: 70%;
 }
 
@@ -142,6 +142,7 @@ header {
 .OURLATESTWORK-central img {
   opacity: 0.7;
   transition: all 0.3s;
+  vertical-align: bottom;
 }
 
 .OURLATESTWORK-central img:hover {
@@ -151,6 +152,18 @@ header {
 .OURLATESTWORK-text {
   margin-top: 90px;
 }
+
+.inner.OURLATESTWORK-inner .text {
+  color: #333;
+  font-size: 20px;
+  float: none;
+  font-family: none;
+  line-height: normal;
+  margin-left: 80px;
+  text-align: center;
+  width: 60%;
+}
+
 
 .button {
   background-color: #74cfae;
@@ -165,17 +178,6 @@ header {
 
 .button:hover {
   color: #333;
-}
-
-.inner.OURLATESTWORK-inner .text {
-  color: #333;
-  font-size: 20px;
-  float: none;
-  font-family: none;
-  line-height: normal;
-  margin-left: 80px;
-  text-align: center;
-  width: 60%;
 }
 
 .OURSKILLS {
@@ -271,11 +273,8 @@ footer {
     text-align: center;
   }
 
-  .WHATWECANDO img {
-    padding: 0;
-  }
-
   .text-content  {
+    margin: 0;
     width: auto;
   }
 
@@ -314,12 +313,12 @@ footer {
     margin-top: 0;
   }
 
-  .icon {
-    letter-spacing: -100px;
+  .inner.SNSicon-inner { 
+    font-size: 0;
   }
 
   .inner.SNSicon-inner li {
-    letter-spacing: normal;
+    font-size: initial;
   }
 }
 
@@ -334,6 +333,17 @@ footer {
 
   .inner.title-inner h1 {
     font-size: 80px;
+  }
+
+  .btn:hover {
+    background-color: #74cfae;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+    padding: 14px 12px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
   }
 
   .btn {
@@ -372,11 +382,8 @@ footer {
     text-align: center;
   }
 
-  .WHATWECANDO img {
-    padding: 0;
-  }
-
   .text-content  {
+    margin: 0;
     width: auto;
   }
 
