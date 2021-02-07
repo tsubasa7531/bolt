@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -6,11 +8,11 @@
 
 .inner {
   margin: 0 auto;
-  width: 1100px;
+  width: 97%;
 }
 
 body {
- font-family: 'Lato';
+  font-family: 'Lato';
 }
 
 .is-raleway {
@@ -24,7 +26,7 @@ header {
   z-index: 1;
 }
 
-.inner.header-inner {
+.header-inner {
   padding: 15px 0px 15px;
 }
 
@@ -42,27 +44,28 @@ header {
 .btn:hover {
   color: #333;
 }
+
 .title {
   background-color: #f2f2f2;
 }
 
-.inner.title-inner {
+.title-inner {
   padding: 250px 0 250px;
 }
 
-.inner.title-inner h1 {
+.title-inner h1 {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
 }
 
-.inner.title-inner p {
+.title-inner p {
   color: #c0c0c0;
   font-size: 30px;
   margin-top: 20px;
 }
 
-.inner.title-inner h1,p {
+.title-inner h1,p {
   text-align: center;
 }
 
@@ -74,26 +77,26 @@ header {
   background-color: #74cfae;
 }
 
-.inner.WHATWECANDO-inner {
-  padding: 50px 0px 0px 50px;
+.WHATWECANDO-inner {
+  padding: 50px 0px 25px;
+  text-align: center;
 }
 
 .WHATWECANDO img {
   float: none;
 }
 
-.inner.WHATWECANDO-inner h2,p {
+.WHATWECANDO-inner h2,p {
   color: #fff;
   text-align: center;
 }
 
-.inner.WHATWECANDO-inner h2 {
+.WHATWECANDO-inner h2 {
   font-size: 24px;
   margin-top: 20px;
 }
   
-
-.inner.WHATWECANDO-inner p {
+.WHATWECANDO-inner p {
   font-size: 20px;
   font-family: none;
   line-height: normal;
@@ -102,21 +105,19 @@ header {
 
 .text-content {
   float: none;
-  margin-left: 120px;
-  width: 70%;
 }
-
 
 .OURLATESTWORK {
   background-color: #f2f2f2;
   color: #333;
 }
 
-.inner.OURLATESTWORK-inner {
+.OURLATESTWORK-inner {
   padding: 60px 0 70px;
+  text-align: center;
 }
 
-.inner.OURLATESTWORK-inner h2 {
+.OURLATESTWORK-inner h2 {
   font-size: 24px;
   text-align: center;
 }
@@ -126,8 +127,7 @@ header {
 }
 
 .OURLATESTWORK-central li {
-  float: none;
-  margin-left: 100px;
+  margin: 0 auto;
 }
 
 .OURLATESTWORK-central a {
@@ -137,6 +137,10 @@ header {
 .OURLATESTWORK-central li:nth-child(3n+1) {
   clear: both;
   margin-left: 0;
+}
+
+.OURLATESTWORK-central li:nth-child(4n) {
+  margin-top: 80px;
 }
 
 .OURLATESTWORK-central img {
@@ -150,27 +154,26 @@ header {
 }
 
 .OURLATESTWORK-text {
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
-.inner.OURLATESTWORK-inner .text {
+.OURLATESTWORK-inner .text {
   color: #333;
   font-size: 20px;
   float: none;
   font-family: none;
   line-height: normal;
-  margin-left: 80px;
-  text-align: center;
-  width: 60%;
+  margin-left: 0;
+  width: auto;
 }
-
 
 .button {
   background-color: #74cfae;
   color: #fff;
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 0;
   font-size: 12px;
-  float: none;
-  margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
   transition: 0.3s;
@@ -184,7 +187,7 @@ header {
   background-color: #4e4e4e;
 }
 
-.inner.OURSKILLS-inner {
+.OURSKILLS-inner {
   padding: 70px 0px 100px;
   text-align: center;
 }
@@ -198,7 +201,12 @@ header {
   margin-top: 50px;
 }
 
+.OURSKILLS-content li {
+  margin-top: 88px;
+}
+
 .OURSKILLS-content li:first-child {
+  margin-top: 0;
   margin-left: 0;
 }
 
@@ -214,15 +222,15 @@ header {
   text-align: center;
 }
 
-.inner.SNSicon-inner {
+.SNSicon-inner {
   padding: 200px 0;
 }
 
-.inner.SNSicon-inner li {
+.SNSicon-inner li {
   display: inline-block;
 }
 
-.inner.SNSicon-inner a {
+.SNSicon-inner a {
   color: #74cfae;
   transition: all 0.3s;
   text-decoration: none;
@@ -230,7 +238,7 @@ header {
   width: 185px;
 }
 
-.inner.SNSicon-inner a:hover {
+.SNSicon-inner a:hover {
   background-color: #fff;
 }
 
@@ -238,112 +246,95 @@ footer {
   background-color: #74cfae;
 }
 
-.inner.inner.footer-inner {
+.footer-inner {
   padding: 20px 0 25px;
 }
 
-.inner.footer-inner p {
+.footer-inner p {
   color: #fff;
   font-size: 16px;
   text-align: right;
 }
 
 @media screen and (min-width: 1200px) {
-  .WHATWECANDO img,.text-content,.OURLATESTWORK-central li,.inner.OURLATESTWORK-inner .text,.button {
+  .inner {
+    width: 1100px;  
+  } 
+
+  .WHATWECANDO img,.text-content,.OURLATESTWORK-central li,.OURLATESTWORK-inner .text,button {
     float: left;
   }
 
-  .OURSKILLS-content li {
-    display: inline-block;
-    margin-left: 180px;
+  .WHATWECANDO-inner {
+    padding: 50px 0px 0px 50px;
   }
 
-  .OURLATESTWORK-central li:nth-child(n+4) {
-    margin-top: 80px;
-  }  
-}
-
-@media screen and (min-width: 768px) and (max-width: 1190px) {
-  .inner {
-    width: 97%;
-  }
-
-  .inner.WHATWECANDO-inner {
-    padding: 50px 0px 25px;
-    text-align: center;
-  }
-
-  .text-content  {
-    margin: 0;
-    width: auto;
-  }
-
-  .OURLATESTWORK-inner {
-    text-align: center;
+  .text-content {
+    margin-left: 120px;
+    width: 70%;
   }
 
   .OURLATESTWORK-central li {
-    margin: 0 auto;
+    margin-left: 100px;
   }
-
-  .OURLATESTWORK-central li:nth-child(4) {
+  
+  .OURLATESTWORK-central li:nth-child(n+4) {
     margin-top: 80px;
+  }
+  
+  .OURLATESTWORK-inner .text {
+    color: #333;
+    font-size: 20px;
+    font-family: none;
+    line-height: normal;
+    margin-left: 80px;
+    text-align: center;
+    width: 60%;
   }
 
   .OURLATESTWORK-text {
-    margin-top: 80px;
+    margin-top: 90px;
   }
 
-  .inner.OURLATESTWORK-inner .text {
-    margin-left: 0;
-    width: auto;
+  .OURLATESTWORK-inner {
+    padding: 60px 0 70px;
   }
 
   .button {
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 0;
+    background-color: #74cfae;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 90px;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
   }
 
   .OURSKILLS-content li {
-    margin-top: 88px;
-  }
-
-  .OURSKILLS-content li:first-child {
+    display: inline-block;
     margin-top: 0;
+    margin-left: 180px;
   }
+}
 
-  .inner.SNSicon-inner { 
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  .SNSicon-inner { 
     font-size: 0;
   }
 
-  .inner.SNSicon-inner li {
+  .SNSicon-inner li {
     font-size: initial;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .inner {
-    width: 97%;
-  }
-
-  .inner.title-inner {
+  .title-inner {
     padding: 160px 0  130px;
   }
 
-  .inner.title-inner h1 {
+  .title-inner h1 {
     font-size: 80px;
-  }
-
-  .btn:hover {
-    background-color: #74cfae;
-    color: #fff;
-    font-size: 12px;
-    float: right;
-    padding: 14px 12px;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.3s;
   }
 
   .btn {
@@ -377,64 +368,19 @@ footer {
     top: -7px;   
   }
 
-  .inner.WHATWECANDO-inner {
-    padding: 50px 0px 25px;
-    text-align: center;
-  }
-
-  .text-content  {
-    margin: 0;
-    width: auto;
-  }
-
-  .OURLATESTWORK-inner {
-    text-align: center;
-  }
-
-  .OURLATESTWORK-central li {
-    margin: 0 auto;
-  }
-
-  .OURLATESTWORK-central li:nth-child(4) {
-    margin-top: 80px;
-  }
-
-  .OURLATESTWORK-text {
-    margin-top: 80px; 
-  }
-
-  .inner.OURLATESTWORK-inner .text {
-    margin-left: 0;
-    width: auto;
-  }
-
-  .button {
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 0;
-  }
-
-  .OURSKILLS-content li {
-    margin-top: 88px;
-  }
-
-  .OURSKILLS-content li:first-child {
-    margin-top: 0;
-  }
-
-  .inner.SNSicon-inner {
+  .SNSicon-inner {
     padding: 50px 0;
   }
 
-  .inner.SNSicon-inner a {
+  .SNSicon-inner a {
     width: 100%;  
   }
 
-  .inner.SNSicon-inner a:hover {
+  .SNSicon-inner a:hover {
     background-color: #fff;
   }
 
-  .inner.SNSicon-inner li {
+  .SNSicon-inner li {
     display: flex;
     justify-content: center;
   }
