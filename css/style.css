@@ -8,7 +8,7 @@
 
 .inner {
   margin: 0 auto;
-  width: 97%;
+  width: 1100px;
 }
 
 body {
@@ -78,7 +78,7 @@ header {
 }
 
 .WHATWECANDO-inner {
-  padding: 50px 0px 25px;
+  padding: 50px 0px 0px 50px;
   text-align: center;
 }
 
@@ -114,7 +114,6 @@ header {
 
 .OURLATESTWORK-inner {
   padding: 60px 0 70px;
-  text-align: center;
 }
 
 .OURLATESTWORK-inner h2 {
@@ -124,6 +123,7 @@ header {
 
 .OURLATESTWORK-central {
   margin-top: 40px;
+  text-align: center;
 }
 
 .OURLATESTWORK-central li {
@@ -154,7 +154,7 @@ header {
 }
 
 .OURLATESTWORK-text {
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 .OURLATESTWORK-inner .text {
@@ -163,16 +163,15 @@ header {
   float: none;
   font-family: none;
   line-height: normal;
-  margin-left: 0;
-  width: auto;
+  margin-left: 80px;
+  width: 60%;
 }
 
 .button {
   background-color: #74cfae;
   color: #fff;
   display: inline-block;
-  margin-top: 40px;
-  margin-left: 0;
+  margin-left: 90px;
   font-size: 12px;
   padding: 14px 20px;
   text-decoration: none;
@@ -202,11 +201,12 @@ header {
 }
 
 .OURSKILLS-content li {
-  margin-top: 88px;
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 180px;
 }
 
 .OURSKILLS-content li:first-child {
-  margin-top: 0;
   margin-left: 0;
 }
 
@@ -257,11 +257,7 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-  .inner {
-    width: 1100px;  
-  } 
-
-  .WHATWECANDO img,.text-content,.OURLATESTWORK-central li,.OURLATESTWORK-inner .text,button {
+  .WHATWECANDO img,.text-content,.OURLATESTWORK-central li,.OURLATESTWORK-inner .text {
     float: left;
   }
 
@@ -280,41 +276,6 @@ footer {
   
   .OURLATESTWORK-central li:nth-child(n+4) {
     margin-top: 80px;
-  }
-  
-  .OURLATESTWORK-inner .text {
-    color: #333;
-    font-size: 20px;
-    font-family: none;
-    line-height: normal;
-    margin-left: 80px;
-    text-align: center;
-    width: 60%;
-  }
-
-  .OURLATESTWORK-text {
-    margin-top: 90px;
-  }
-
-  .OURLATESTWORK-inner {
-    padding: 60px 0 70px;
-  }
-
-  .button {
-    background-color: #74cfae;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 0;
-    margin-left: 90px;
-    padding: 14px 20px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-
-  .OURSKILLS-content li {
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 180px;
   }
 }
 
@@ -338,33 +299,37 @@ footer {
   }
 
   .btn {
+    display: none;
+  }
+
+  .Toggle {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 10px;
-    position: relative;
+    left: 680px;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
   }
 
-  .btn-line,.btn-line::before,.btn-line::after {
+  .Toggle span,.Toggle span::before,.Toggle span::after {
     background-color: #c0c0c0;
+    cursor: pointer;
+    content: "";
+    height: 2px;
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    height: 2px;
-    width: 24px;
     transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+    width: 24px;
   }
 
-  .btn-line::before,.btn-line::after {
-    content: "";
-  }
-
-  .btn-line::before {
+  .Toggle span::before {
     top: 7px  
   }
 
-  .btn-line::after {
+  .Toggle span::after {
     top: -7px;   
   }
 
@@ -385,3 +350,45 @@ footer {
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 767px) {
+  .Toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .inner {
+    width: 97%;
+  }
+
+  .WHATWECANDO-inner {
+    padding: 50px 0px 25px;
+  }
+
+  .OURLATESTWORK-text {
+    margin-top: 80px;
+    text-align: center;  
+  }
+
+  .OURLATESTWORK-inner .text {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .button {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .OURSKILLS-content li {
+    display: block;
+    margin-top: 88px;
+    margin-left: 0;
+  }
+
+  .OURSKILLS-content li:first-child {
+    margin-top: 0;
+  }
+}
+
