@@ -139,7 +139,7 @@ header {
   margin-left: 0;
 }
 
-.OURLATESTWORK-central li:nth-child(4n) {
+.OURLATESTWORK-central li:nth-child(n+4) {
   margin-top: 80px;
 }
 
@@ -273,10 +273,6 @@ footer {
   .OURLATESTWORK-central li {
     margin-left: 100px;
   }
-  
-  .OURLATESTWORK-central li:nth-child(n+4) {
-    margin-top: 80px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -303,36 +299,40 @@ footer {
   }
 
   .Toggle {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    box-sizing: border-box;
     border-radius: 4px;
-    left: 680px;
-    padding: 20px;
+    border: 1px solid #ddd;
+    display: block;
+    height: 34px;
     position: fixed;
-    top: 20px;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    width: 44px;
   }
-
-  .Toggle span,.Toggle span::before,.Toggle span::after {
-    background-color: #c0c0c0;
-    cursor: pointer;
-    content: "";
+  
+  .Toggle span {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    display: inline-block;
     height: 2px;
-    left: 50%;
+    left: 10px;
     position: absolute;
-    top: 50%;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     width: 24px;
   }
-
-  .Toggle span::before {
-    top: 7px  
+  
+  .Toggle span:nth-of-type(1) {
+    top: 8px;
   }
-
-  .Toggle span::after {
-    top: -7px;   
+    
+  .Toggle span:nth-of-type(2) {
+    top: 15px;
   }
-
+    
+  .Toggle span:nth-of-type(3) {
+    bottom: 8px;
+  }
+  
   .SNSicon-inner {
     padding: 50px 0;
   }
@@ -374,6 +374,14 @@ footer {
   .OURLATESTWORK-inner .text {
     margin-left: 0;
     width: auto;
+  }
+
+  .OURLATESTWORK-central li:nth-child(4n) {
+    margin-top: 80px;
+  }
+  
+  .OURLATESTWORK-central li:nth-child(n+5) {
+    margin-top: 0;
   }
 
   .button {
